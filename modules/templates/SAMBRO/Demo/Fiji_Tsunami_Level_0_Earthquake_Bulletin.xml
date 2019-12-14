@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>urn:oid:2.49.0.0.242.1.2.2019.12.03.019</identifier>
+  <sender>mrd_approver@example.com</sender>
+  <sent>2019-12-15T17:48:00+12:00</sent>
+  <status>Test</status>
+  <msgType>Alert</msgType>
+  <source>rans.spoton.lk</source>
+  <scope>Public</scope>
+  <note>CAP v1.2 message for RANS Fiji demo – Tsunami alerts issued by Mineral Resource Department</note>
+  <info>
+    <language>hi</language>
+    <category>Geo</category>
+    <event>Tsunami</event>
+    <responseType>Assess</responseType>
+    <urgency>Past</urgency>
+    <severity>Minor</severity>
+    <certainty>Unlikely</certainty>
+    <effective>2019-12-15T17:45:00+12:00</effective>
+    <onset>2019-12-15T07:43:00+12:00</onset>
+    <expires>2019-12-20T17:45:00+12:00</expires>
+    <senderName>Mineral Resource Department</senderName>
+    <headline>भूकंप बुलेटिन - सुनामी नहीं</headline>
+    <description>2019-12-15 -एमएम-डीडी 17:45 में: एमएम फिजी मिरल रिसोर्स डिपार्टमेंट (एमआरडी) सुनामी चेतावनी केंद्र ने रिक्टर पैमाने पर @NUMBER परिमाण के भूकंप का पता लगाया । उपरिकेंद्र ROTUMA के किमी NORTHEAST 385KM दर्ज किया गया था । ROTUMA द्वीपों के लिए सुनामी का कोई खतरा नहीं है ।”</description>
+    <instruction>कोई कार्रवाई की आवश्यकता नहीं</instruction>
+    <web></web>
+    <parameter>
+      <valueName>sahana:event type</valueName>
+      <value>Tsunami</value>
+    </parameter>
+    <parameter>
+      <valueName>sahana:warning priority</valueName>
+      <value>Tsunami Level 0</value>
+    </parameter>
+    <parameter>
+      <valueName>layer:tweet</valueName>
+      <value>Test Alert: भूकंप बुलेटिन - सुनामी नहीं!
+Sender: MRD</value>
+    </parameter>
+    <parameter>
+      <valueName>layer:sms</valueName>
+      <value>Test Alert for Rotuma Eastern Division Islands with Tsunami Level 0 priority: Tsunami! issued by mrd_approver@example.com at 2019-12-15T17:45:00 (ID:urn:oid:2.49.0.0.242.1.2.2019.12.15.019)</value>
+    </parameter>
+    <resource>
+      <resourceDesc>CAP XML File</resourceDesc>
+      <mimeType>text/xml</mimeType>
+    </resource>
+    <area>
+      <areaDesc>रोटुमा फिजी</areaDesc>
+      <polygon>
+-14.02133801053085,-178.246135711672 -14.0746267967919,-177.9385185241719 -14.30894929175408,-177.7187919616706 -14.59619279957305,-177.8066825866694 -14.61745528057464,-178.1582450866733 -14.3834554175964,-178.4878349304163 -14.08528306467892,-178.4658622741734 -14.02133801053085,-178.246135711672
+      </polygon>
+    </area>
+  </info>
+  <info>
+    <language>en-US</language>
+    <category>Geo</category>
+    <event>Tsunami</event>
+    <responseType>Assess</responseType>
+    <urgency>Past</urgency>
+    <severity>Minor</severity>
+    <certainty>Unlikely</certainty>
+    <effective>2019-12-15T17:45:00+12:00</effective>
+    <onset>2019-12-15T07:43:00+12:00</onset>
+    <expires>2019-12-20T17:45:00+12:00</expires>
+    <senderName>Mineral Resource Department</senderName>
+    <headline>“Earthquake bulletin – No tsunami”</headline>
+    <description>2019-12-15 at @17:45 the Fiji Mieral Resource Department (MRD) Tsunami Warning Center detected an Earthquake of magnitude 5.6 on the Richter scale . The EPICENTER was recorded 385 KM NORTHEAST of ROTUMA, Fiji. There is no threat of a Tsunami to Fiji.</description>
+    <instruction>NO ACTION REQUIRED</instruction>
+    <web></web>
+    <parameter>
+      <valueName>sahana:event type</valueName>
+      <value>Tsunami</value>
+    </parameter>
+    <parameter>
+      <valueName>sahana:warning priority</valueName>
+      <value>Tsunami Level 0</value>
+    </parameter>
+    <parameter>
+      <valueName>tsunami-wave-impact-height-meters</valueName>
+      <value>0.0</value>
+    </parameter>
+    <parameter>
+      <valueName>layer:tweet</valueName>
+      <value>Test Alert: “Earthquake bulletin – No tsunami”!
+Sender: MRD</value>
+    </parameter>
+    <parameter>
+      <valueName>layer:sms</valueName>
+      <value>Test Alert for Rotuma Eastern Division Islands with Tsunami Level 0 priority: Tsunami! issued by mrd_approver@example.com at 2019-12-15T17:45:00 (ID:urn:oid:2.49.0.0.242.1.2.2019.12.15.019)</value>
+    </parameter>
+    <resource>
+      <resourceDesc>CAP XML File</resourceDesc>
+      <mimeType>text/xml</mimeType>
+    </resource>
+    <area>
+      <areaDesc>Fiji Rotuma</areaDesc>
+      <polygon>
+-14.02133801053085,-178.246135711672 -14.0746267967919,-177.9385185241719 -14.30894929175408,-177.7187919616706 -14.59619279957305,-177.8066825866694 -14.61745528057464,-178.1582450866733 -14.3834554175964,-178.4878349304163 -14.08528306467892,-178.4658622741734 -14.02133801053085,-178.246135711672
+      </polygon>
+    </area>
+  </info>
+</alert>

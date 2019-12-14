@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
-  <identifier>urn:oid:.2019.12.03.021</identifier>
-  <sender>admin@example.com</sender>
+  <identifier>urn:oid:2.49.0.0.242.1.1.2019.12.03.021</identifier>
+  <sender>mrd_approver@example.com</sender>
   <sent>2019-12-03T09:45:32+00:00</sent>
   <status>Test</status>
   <msgType>Alert</msgType>
-  <source>localhost@http://localhost:8000</source>
+  <source>http://rans.spoton.lk</source>
   <scope>Public</scope>
   <note>CAP v1.2 message prepared by the Government of Fiji for use in alerting of the water shortage crisis</note>
   <reference>fsm_editor@example.com,urn:oid:2.49.0.0.242.2.1.2019.12.02.015,2019-12-02T09:23:17+00:00</reference>
@@ -18,14 +18,14 @@
     <urgency>Immediate</urgency>
     <severity>Extreme</severity>
     <certainty>Observed</certainty>
-    <effective>2019-12-02T09:11:14+00:00</effective>
-    <onset>2019-12-02T09:06:46+00:00</onset>
-    <expires>2019-12-04T09:11:14+00:00</expires>
-    <senderName>admin@example.com</senderName>
+    <effective>2019-12-15T09:30:00+12:00</effective>
+    <onset>2019-12-10T09:00:00+12:00</onset>
+    <expires>2019-12-29T09:30:00+12:00</expires>
+    <senderName>Suva Water Works</senderName>
     <headline>Water Shortage in SUVA.</headline>
-    <description>The drought weather over the past 15 days has caused a water shortage in Suva Fiji. As of today 2019-Dec-02 the Suva Water Works (SWW) has estimated an immediate need of 2000 Tons for drinking for cooking, drinking, washing, and sanitation. According to the Fiji Meteorological Services (FSM) forecasts NO RAIN for the next 10 of days. Therefore, these Suva will need WASH assistance。</description>
+    <description>The drought weather over the past 15 days has caused a water shortage in Suva Fiji. As of today 2019-Dec-15 the Suva Water Works (SWW) has estimated an immediate need of 2000 Tons of water for cooking, drinking, washing, and sanitation. According to the Fiji Meteorological Services (FSM) forecasts NO RAIN for the next 10 of days. Therefore, people living in Suva will need WASH assistance.</description>
     <instruction>Recipients of this message are requested to respond to the crisis by providing direct WASH assistance or relay the alert to other relevant relief services.</instruction>
-    <web>http://localhost:8000/eden/cap/public/15/profile/profile</web>
+    <web></web>
     <parameter>
       <valueName>sahana:event type</valueName>
       <value>Drought</value>
@@ -36,11 +36,11 @@
     </parameter>
     <parameter>
       <valueName>layer:sms</valueName>
-      <value>Test Alert for Suva with Advisory priority: Drought! issued by admin@example.com at 2019-12-02T09:23:17 (ID:urn:oid:.2019.12.02.015)</value>
+      <value>Test Alert for Suva with Advisory priority: Drought! issued by SWW at 2019-12-15T09:30:00 (ID:urn:oid:2.49.0.0.242.1.3.2019.12.02.015)</value>
     </parameter>
     <parameter>
       <valueName>layer:tweet</valueName>
-      <value>Test Alert: Water Shortage in @AREA.! Sender: admin@example.com Website: http://localhost:8000/eden/cap/public/15/profile</value>
+      <value>Test Alert: Water Shortage in Suva.! Sender: SWW</value>
     </parameter>
     <parameter>
       <valueName>sahana:warning priority</valueName>
@@ -48,13 +48,11 @@
     </parameter>
     <parameter>
       <valueName>layer:tweet</valueName>
-      <value>Test Alert: Water Shortage in SUVA.!
-Sender: admin@example.com
-Website: http://localhost:8000/eden/cap/public/15/profile/profile</value>
+      <value>Test Alert: Water Shortage in SUVA.! Sender: Suva Water Works</value>
     </parameter>
     <parameter>
       <valueName>layer:sms</valueName>
-      <value>Test Alert for Suva with Warning priority: Drought! issued by admin@example.com at 2019-12-03T09:45:32 (ID:urn:oid:.2019.12.03.021)</value>
+      <value>Test Alert for Suva with Warning priority: Drought! issued by SWW at 2019-12-15T09:30:00 (ID:urn:oid:2.49.0.0.242.1.3.2019.12.02.015)</value>
     </parameter>
     <resource>
       <resourceDesc>CAP XML File</resourceDesc>
@@ -69,14 +67,14 @@ Website: http://localhost:8000/eden/cap/public/15/profile/profile</value>
     <urgency>Immediate</urgency>
     <severity>Extreme</severity>
     <certainty>Observed</certainty>
-    <effective>2019-12-02T09:11:14+00:00</effective>
-    <onset>2019-12-02T09:06:46+00:00</onset>
-    <expires>2019-12-04T09:11:14+00:00</expires>
-    <senderName>admin@example.com</senderName>
+    <effective>2019-12-15T09:30:00+12:00</effective>
+    <onset>2019-12-10T09:00:00+12:00</onset>
+    <expires>2019-12-29T09:30:00+12:00</expires>
+    <senderName>Suva Water Works</senderName>
     <headline>SUVA में सूखे से जल की कमी हुई है।</headline>
-    <description>पिछले 2000 के दिनों में सूखे के कारण फिजी में SUVA में पानी की कमी हो गई है। 2019-Nov-15 के अनुसार राष्ट्रीय आपदा प्रबंधन केंद्र (NDMC) ने खाना पकाने के लिए पीने के लिए 10 टन की तत्काल आवश्यकता का अनुमान लगाया है। फिजी मौसम विज्ञान सेवा (FSM) के अनुसार इन Suva में 10 दिनों के लिए NO RAIN का पूर्वानुमान नहीं है और इसे सहायता की आवश्यकता होगी</description>
+    <description>पिछले 2000 के दिनों में सूखे के कारण फिजी में SUVA में पानी की कमी हो गई है। 2019-Dec-15 के अनुसार राष्ट्रीय आपदा प्रबंधन केंद्र (NDMC) ने खाना पकाने के लिए पीने के लिए 10 टन की तत्काल आवश्यकता का अनुमान लगाया है। फिजी मौसम विज्ञान सेवा (FSM) के अनुसार इन Suva में 10 दिनों के लिए NO RAIN का पूर्वानुमान नहीं है और इसे सहायता की आवश्यकता होगी</description>
     <instruction>इस संदेश के प्राप्तकर्ता से अनुरोध है कि वे राहत सेवाओं तक पहुंचने के लिए अलर्ट को पुनः जारी करने की प्रत्यक्ष सहायता प्रदान करके संकट का जवाब दें</instruction>
-    <web>http://localhost:8000/eden/cap/public/15/profile/profile</web>
+    <web></web>
     <parameter>
       <valueName>sahana:event type</valueName>
       <value>Drought</value>
@@ -87,11 +85,11 @@ Website: http://localhost:8000/eden/cap/public/15/profile/profile</value>
     </parameter>
     <parameter>
       <valueName>layer:sms</valueName>
-      <value>Test Alert for Suva with Advisory priority: Drought! issued by admin@example.com at 2019-12-02T09:23:17 (ID:urn:oid:.2019.12.02.015)</value>
+      <value>Test Alert for Suva with Advisory priority: Drought! issued by SWW at 2019-12-15T09:30:00 (ID:urn:oid:2.49.0.0.242.1.3.2019.12.02.015)</value>
     </parameter>
     <parameter>
       <valueName>layer:tweet</valueName>
-      <value>Test Alert: SUVA में सूखे से जल की कमी हुई है।! Sender: admin@example.com Website: http://localhost:8000/eden/cap/public/15/profile</value>
+      <value>Test Alert: SUVA में सूखे से जल की कमी हुई है।! Sender: Suva Water Works</value>
     </parameter>
     <parameter>
       <valueName>sahana:warning priority</valueName>
@@ -100,16 +98,21 @@ Website: http://localhost:8000/eden/cap/public/15/profile/profile</value>
     <parameter>
       <valueName>layer:tweet</valueName>
       <value>Test Alert: SUVA में सूखे से जल की कमी हुई है।!
-Sender: admin@example.com
-Website: http://localhost:8000/eden/cap/public/15/profile/profile</value>
+Sender: Suva Water Works</value>
     </parameter>
     <parameter>
       <valueName>layer:sms</valueName>
-      <value>Test Alert for Suva with Warning priority: Drought! issued by admin@example.com at 2019-12-03T09:45:32 (ID:urn:oid:.2019.12.03.021)</value>
+      <value>Test Alert for Suva with Warning priority: Drought! issued by SWW at 2019-12-15T09:30:00 (ID:urn:oid:2.49.0.0.242.1.3.2019.12.02.015)</value>
     </parameter>
     <resource>
       <resourceDesc>CAP XML File</resourceDesc>
       <mimeType>text/xml</mimeType>
     </resource>
+    <area>
+      <areaDesc>Suva</areaDesc>
+      <polygon>
+-18.12058449502133,178.4186995258324 -18.12254225609871,178.4269392719235 -18.14472868435994,178.4145796527823             -18.16299774695077,178.4186995258324 -18.1682171282184,178.4331190814895 -18.16495503320787,178.4495985736808 -18.15516838258334,178.4564650287611 -18.14081363678659,178.4667647113773 -18.12841540796131,178.4791243305184 -18.11536369179408,178.4859907855989 -18.1121006107408,178.4928572406702 -18.09970034845521,178.49835040474 -18.08729920894435,178.5010969867704 -18.07489719272632,178.4708845844273 -18.07554995227072,178.4578383197718 -18.08729920894435,178.4331190814895 -18.09317354223915,178.4186995258324 -18.1010056805405,178.3974135150858 -18.11144798723541,178.387800477975 -18.12188967150517,178.391920351025 -18.12319483825961,178.4015333881358 -18.12058449502133,178.4186995258324
+      </polygon>
+    </area>
   </info>
 </alert>

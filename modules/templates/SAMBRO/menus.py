@@ -65,8 +65,9 @@ class S3MainMenu(default.S3MainMenu):
         if auth.s3_logged_in():
             alerting_menu = MM("Alerts", c="cap", f="alert")
             mapping_menu = MM("Map", c="gis", f="index")
-            recipient_menu = MM("Recipients", c="pr", f="subscription",
-                                vars={"option": "manage_recipient"})
+## Moved to 'def menu_admin'; more appropriate and meaningful
+            #recipient_menu = MM("Subscriber List", c="pr", f="subscription",
+            #                    vars={"option": "manage_recipient"})
 
             if has_role("ADMIN"):
                 # Full set
@@ -75,8 +76,10 @@ class S3MainMenu(default.S3MainMenu):
                         alerting_menu,
                         alert_hub_menu,
                         MM("Organizations", c="org", f="organisation"),
-                        MM("Persons", c="pr", f="person"),
-                        recipient_menu,
+## Moved to 'def menu_admin'; more appropriate and meaningful
+## @ToDo appropriately restructure the manager users, recipient lists, etc
+                        #MM("Registered Persons", c="pr", f="person"),
+                        #recipient_menu,
                         mapping_menu,                                                
                         ]
             else:
@@ -118,7 +121,7 @@ class S3MainMenu(default.S3MainMenu):
             # Logged-in
             user_id = auth.s3_logged_in_person()                
             menu_auth = MM(auth.user.email, link=False, right=True)(
-                           MM("Subscription", c="pr", f="subscription"),
+                           MM("Alert Subscription", c="pr", f="subscription"),
                            MM("Edit Profile", c="pr", f="person", args=[user_id]),
                            MM("Change Password", c="default", f="user",
                               m="change_password"),
@@ -139,6 +142,11 @@ class S3MainMenu(default.S3MainMenu):
                             MM("Manage Users", f="user"),
                             MM("Database", c="appadmin", f="index"),
                             MM("Error Tickets", f="errors"),
+                            MM("Recipient List", c="pr", f="subscription",
+                                vars={"option": "manage_recipient"})(
+                                MM("Registered Persons", c="pr", f="person"),
+                                )
+
                             #MM("Synchronization", c="sync", f="index"),
                          )
         else:

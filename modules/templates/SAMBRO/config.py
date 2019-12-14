@@ -32,6 +32,15 @@ def config(settings):
     # Theme (folder to use for views/layout.html)
     #settings.base.theme = "SAMBRO"
 
+    # LOGO UI Settings to quickly change the demo logo to customer liking
+    # INSTRUCTIONS - copy your logo (40 x 40 pixels) into static/themes/SAMBRO/Demo/
+    #                replace default.png with the name of your logo image in
+    #                args = ["SAMBRO", "Demo", "img", "default.png"] below
+    settings.ui.menu_logo = URL(c = "static",
+                                f = "themes",
+                                args = ["SAMBRO", "Demo", "img", "default.png"],
+                                )
+
     # The Registration functionality shouldn't be visible to the Public
     #settings.security.registration_visible = True
 
